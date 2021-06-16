@@ -33,3 +33,19 @@ nav ul li {text-align:left;
        padding: 5px;
         color:	#0d0d64 ; 
      }
+
+     table {
+        padding: 10px;
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
