@@ -10,20 +10,38 @@
         
     </header>
     <main>
-      <a href="index.html">Back to main page</a>
+      <a href="index.html">Back to main page</a> <br>
       <div id="salesData">
-        <!-- <h1> </h1> -->
-        <!-- generate this from js: -->
-        <!-- <article>
-          <h2>Frankie</h2>
-          <p>Frankie is a British, he is age 3 months</p>
-          <ul>
-            <li>Chasing</li>
-          </ul>
-          <img src="./images/frankie.jpeg">
-        </article> -->
         
       </div>
+
+      <br>
+      
+      <fieldset>
+        <legend>Add new Location</legend>
+        <form id="salmonForm">
+          <label for="lacationName">Name</label>
+          <input type="text" name="locationName" id="locationName" placeholder="Amman">
+  
+          <label for="averagePerHour">Averge of Cookies</label>
+          <input type="text" name="averagePerHour" id="averagePerHour" placeholder="4">
+  
+          <!-- <label for="cookiesPerHour">cookies sold for each hour</label>
+          <input type="text" name="cookiesPerHour" id="cookiesPerHour" placeholder="20,30,74"> -->
+
+          <label for="minCookies">minimum cookies sold</label>
+          <input type="text" name="minCookies" id="minCookies" placeholder="7">
+  
+          
+          <label for="maxCookies">maximum cookies sold</label>
+          <input type="text" name="maxCookies" id="maxCookies" placeholder="200">
+  
+
+          <button type="submit">Save</button>
+        </form>
+
+      </fieldset><br>
+<h5>Restaurant data</h5>
       <table id="table"></table>
     </main>
     <footer>

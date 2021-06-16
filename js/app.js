@@ -4,7 +4,7 @@ const hours = ['6am', '7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','
 
 let salmon = document.getElementById('salesData');
 let table = document.getElementById('table');
-
+let salmonForm = document.getElementById('salmonForm');
 
 function SalmonApp(name,avg, min, max) {
   this.name = name;
@@ -75,7 +75,7 @@ function makeTableHeader() {
 
   let th1 = document.createElement('th');
   tr.appendChild(th1);
-  th1.textContent = ' ';
+  th1.textContent = 'cities';
 
   for(let i = 0; i < hours.length; i++) {
     let th2 = document.createElement('th');
@@ -87,6 +87,8 @@ function makeTableHeader() {
   tr.appendChild(th3);
   th3.textContent = 'Daily totals';
 }
+
+
 
 function makeTableFooter() {
   // console.log(SalmonApp.allCookies)
@@ -107,6 +109,8 @@ function makeTableFooter() {
       hourlyTotal += total;
       totalOfTotals += total;
     }
+
+
     let th2 = document.createElement('th');
     tr.appendChild(th2);
     th2.textContent = hourlyTotal;
@@ -122,6 +126,27 @@ function makeTableFooter() {
 function getRandomCustomer(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
 }
+
+
+function formSubmission(event) {
+  event.preventDefault();
+  let name = event.target.locationName.value;
+  let averagePerHour = event.target.averagePerHour.value;
+  let min = event.target.minCookies.value;
+  let max = event.target.maxCookies.value;
+ 
+
+  let newCity = new SalmonApp(name, averagePerHour, min, max);
+//  table.deleteRow(locations.length);
+
+  newCity.getCustomer();
+  newCity.render();
+makeTableFooter();
+  console.log(newCity);
+};
+
+salmonForm.addEventListener('submit', formSubmission);
+
 
 // let seattle = {
 //   name: 'Seattle',

@@ -68,9 +68,10 @@ main section:nth-child(1) {text-align:left;
 
       footer {
         text-align: center;
-        font-size: smaller;
+        
         background-color: #222;
         color: #D3D3D3;
+        
       }
 
       main a {

@@ -1,5 +1,5 @@
 body {
-    background-color: #D3D3D3 ;
+    background-color: #9e7ebdd5 ;
     
     }
     header img {
@@ -33,6 +33,7 @@ nav ul li {text-align:left;
        font-family: "Times New Roman", Times, serif;
        padding: 5px;
         color:	#0d0d64 ; 
+
      }
 
      table {
@@ -59,10 +60,16 @@ nav ul li {text-align:left;
         color: #D3D3D3;
       }
 
-      main a {
+      main a { text-decoration: none;
         font-style: oblique;
         font-size: x-large;
         font-family: Georgia, 'Times New Roman', Times, serif;
        text-align: center;
+       background-color: rgb(255, 255, 255);
+       border:orange ;
       }
-     
+     h5{
+       font-size: x-large;
+       font-style: oblique;
+       font-family:Verdana, Geneva, Tahoma, sans-serif;
+     }
