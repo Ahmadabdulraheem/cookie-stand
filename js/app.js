@@ -137,7 +137,7 @@ function formSubmission(event) {
  
 
   let newCity = new SalmonApp(name, averagePerHour, min, max);
-//  table.deleteRow(locations.length);
+  table.deleteRow(SalmonApp.allCookies.length);
 
   newCity.getCustomer();
   newCity.render();
