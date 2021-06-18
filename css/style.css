@@ -1,5 +1,5 @@
 body {
-    background-color: #9e7ebdd5 ;
+    background-color: #e044ccd5 ;
     
     }
     header img {
@@ -35,11 +35,19 @@ nav ul li {text-align:left;
         color:	#0d0d64 ; 
 
      }
+    
 
      table {
+      font-family: 'Cinzel', serif;
+      font-family: 'Dancing Script', cursive;
+      font-family: 'Viaoda Libre', cursive;
         padding: 10px;
-        border: 2px solid black;
+        
         border-collapse: collapse;
+        border: 3px solid purple;
+        font-size: larger;
+        background-color: rgb(170, 170, 70);
+        color: rgb(117, 27, 27);
       
       }
       td {
@@ -55,21 +63,30 @@ nav ul li {text-align:left;
 
       footer {
         text-align: center;
-        font-size: smaller;
+        font-size: small;
         background-color: #222;
         color: #D3D3D3;
       }
 
-      main a { text-decoration: none;
+       main a { text-decoration: none;
         font-style: oblique;
         font-size: x-large;
         font-family: Georgia, 'Times New Roman', Times, serif;
        text-align: center;
-       background-color: rgb(255, 255, 255);
-       border:orange ;
+       background-color: rgb(245, 179, 179);
+      
       }
      h5{
        font-size: x-large;
        font-style: oblique;
        font-family:Verdana, Geneva, Tahoma, sans-serif;
      }
+     form {
+     background-color: cadetblue;
+     }
+     input[type=text] {
+      border: 2px solid red;
+      border-radius: 4px;
+      background-color: lightblue;
+
+    }
